@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Navegador-->
+    <title>Hola mundo</title>
+    <!--Título de la página-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/styles.css" as="style" />
+    <!--Antes que se cargues el html, quiero que precargues un archivo con la referencia "css"-->
+    <link  href="css/styles.css" rel="stylesheet">
+
+    
+</head>
+<body>
+    <header>
+        <h1 class="titulo">
+            Desarrollo de Aplicaciones Web <span> Website </span>
+        </h1>
+        <!-- Utilizar un h1 por documento html -->
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="unidades.html">Unidades</a>
+            <a href="calificaciones.html">Calificaciones</a>
+            <!--<a href="#">Calificaciones</a>  
+            El numeral (#) ayuda a que el texto se vea como hipervinculo sin la necesidad de referenciarla"-->
+        </nav>
+    </div>
+    
+
+
+    <section class="hero">
+        <div class="contenido-hero">
+            <p>Luis Galarza Bravo</p>
+            <img src="iconos/contactar.svg">
+            <p>Guayaquil, Ecuador</p>
+            <a class="boton" href="#">Contactar</a>
+        </div>
+
+    </section>
+    
+    <main class="sombra">
+        <h2>Tecnologías</h2>
+        <div class="lenguajes">
+            <section class="lenguaje">
+                <!--Si tiene un heading como primer hijo se recomienda hacer un section-->
+                <h3>HTML</h3>
+                <p>
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos 
+                    de texto.
+                </p>
+            </section>
+        
+        <section>
+            <h3>CSS</h3>
+            <img src="iconos/css.svg">
+            <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos 
+                de php.
+            </p>
+        </section>
+        
+        <section>
+            <h3>JavaScript</h3>
+                <p>
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos 
+                    de texto.
+                </p>
+        </section>
+    
+        <section>
+            <h3>PHP</h3>
+                <p>
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos 
+                    de texto.
+                </p>
+        </section>
+        </div>
+
+    </main>
+    
+    <section>
+        <h2>Contacto</h2>
+
+        <form>
+            <fieldset>
+                <legend>Contactanos</legend>
+
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre"/>
+                </div>
+                <div>
+                    <label>Correo</label>
+                    <input type="email">
+                </div>
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel">
+                </div>
+                <div>
+                    <label>Mensaje</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>Todos los derechos reservados Luis Galarza</p>
+    </footer>
+</body>
+</html>
