@@ -9,15 +9,14 @@
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="preload" href="css/styles.css" as="style" />
     <!--Antes que se cargues el html, quiero que precargues un archivo con la referencia "css"-->
-    <link  href="css/styles.css" rel="stylesheet">
-
-    
+    <link  href="css/styles.css" rel="stylesheet"> 
 </head>
+
 <body>
     <header>
         <h1 class="titulo">
@@ -54,71 +53,82 @@
             <section class="lenguaje">
                 <!--Si tiene un heading como primer hijo se recomienda hacer un section-->
                 <h3>HTML</h3>
+                <div class="iconos">
+                    <img src="iconos/html.svg">
+                </div>
+                
                 <p>
                     Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos 
                     de texto.
                 </p>
             </section>
         
-        <section>
-            <h3>CSS</h3>
-            <img src="iconos/css.svg">
-            <p>
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos 
-                de php.
-            </p>
-        </section>
+            <section class="lenguaje">
+                <h3>CSS</h3>
+                <div class="iconos">
+                    <img src="iconos/css.svg">
+                </div>
+                <p>
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos 
+                    de php.
+                </p>
+            </section>
         
-        <section>
-            <h3>JavaScript</h3>
+            <section class="lenguaje">
+                <h3>JavaScript</h3>
+                <div class="iconos">
+                    <img src="iconos/javascript.svg">
+                </div>
                 <p>
                     Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos 
                     de Leo.
                 </p>
-        </section>
+            </section>
     
-        <section>
-            <h3>PHP</h3>
+            <section class="lenguaje">
+                <h3>PHP</h3>
+                <div class="iconos">
+                    <img src="iconos/php.svg">
+                </div>
                 <p>
                     Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos 
                     de texto.
                 </p>
-        </section>
+            </section>
         </div>
-
+    
+        <section>
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contactanos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Nombre"/>
+                        </div>
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email">
+                        </div>
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel">
+                        </div>
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text" name="" id=""></textarea>
+                        </div>
+                        </div>
+                    <div class="enviar">
+                        <input class="boton" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
     
-    <section>
-        <h2>Contacto</h2>
-
-        <form>
-            <fieldset>
-                <legend>Contactanos</legend>
-
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Nombre"/>
-                </div>
-                <div>
-                    <label>Correo</label>
-                    <input type="email">
-                </div>
-                <div>
-                    <label>Teléfono</label>
-                    <input type="tel">
-                </div>
-                <div>
-                    <label>Mensaje</label>
-                    <textarea name="" id=""></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </fieldset>
-        </form>
-    </section>
-
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos reservados Luis Galarza</p>
     </footer>
 </body>
