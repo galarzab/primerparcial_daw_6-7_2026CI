@@ -7,7 +7,7 @@
     <title>DAW 6-7</title>
     <!--Título de la página-->
     <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <h1 class="titulo">
+        <h1 class="titulo" id="title">
             Desarrollo de Aplicaciones Web <span> Website </span>
         </h1>
         <!-- Utilizar un h1 por documento html -->
@@ -42,7 +42,7 @@
             <p>Luis Galarza Bravo</p>
             <img src="iconos/contactar.svg">
             <p>Guayaquil, Ecuador</p>
-            <a class="boton" href="#">Contactar</a>
+            <a class="boton boton-contactar" href="#">Contactar</a>
         </div>
 
     </section>
@@ -105,23 +105,33 @@
                     <div class="contenedor-campos">
                         <div class="campo">
                             <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Nombre"/>
+                            <input class="input-text nombre"
+                            id="nombre"
+                            type="text"
+                            placeholder="Nombre"/>
                         </div>
                         <div class="campo">
                             <label>Correo</label>
-                            <input class="input-text" type="email">
+                            <input class="input-text email" 
+                            id="email"
+                            type="email">
                         </div>
                         <div class="campo">
                             <label>Teléfono</label>
-                            <input class="input-text" type="tel">
+                            <input class="input-text telefono"
+                            id="telefono"
+                            type="tel">
                         </div>
                         <div class="campo">
                             <label>Mensaje</label>
-                            <textarea class="input-text" name="" id=""></textarea>
+                            <textarea class="input-text mensaje" 
+                            id="mensaje"></textarea>
                         </div>
                         </div>
                     <div class="enviar">
-                        <input class="boton" type="submit" value="Enviar">
+                        <input class="boton boton-formulario" 
+                        type="submit" 
+                        value="Enviar">
                     </div>
                 </fieldset>
             </form>
@@ -131,5 +141,7 @@
     <footer class="footer">
         <p>Todos los derechos reservados Luis Galarza</p>
     </footer>
+
+    <script src="../IntroduccionJS/js/scripts.js"></script> //En mi caso se utiliza "../" para poder acceder en otra carpeta.
 </body>
 </html>
